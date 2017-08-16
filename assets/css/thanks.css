@@ -1,0 +1,102 @@
+body {
+  height: 100%;
+  font-family: sans-serif;
+  /* background-color: #333; */
+  background: -webkit-linear-gradient(280deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+  background: -o-linear-gradient(280deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+  background: -ms-linear-gradient(280deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+  background: -moz-linear-gradient(280deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+  background: linear-gradient(170deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+}
+
+.section {
+  color: #333;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-row {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.section-row.pad-4 {
+  padding-top: 4em;
+}
+.section-row.pad-1 {
+  padding-top: 1em;
+}
+
+.input-group {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.input-group.hidden {
+  opacity: 0;
+}
+
+.icon {
+  height: 5em;
+  width: 5em;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header {
+  color: white;
+}
+
+h1.header {
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 3.2em;
+}
+
+.header span {
+  max-width: 850px;
+  line-height: 1.3em;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.small-header {
+  font-size: 1em;
+  display: block;
+  margin-top: 80px;
+}
+
+.coffeeicon {
+  margin-bottom: 40px;
+}
+
+/* Tick-Animation */
+.circ{
+  opacity: 0;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.tick{
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  -webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
+  -moz-transition: stroke-dashoffset 1s 0.5s ease-out;
+  -ms-transition: stroke-dashoffset 1s 0.5s ease-out;
+  -o-transition: stroke-dashoffset 1s 0.5s ease-out;
+  transition: stroke-dashoffset 1s 0.5s ease-out;
+}
+.drawn > svg .path{
+  opacity: 1;
+  stroke-dashoffset: 0;
+}

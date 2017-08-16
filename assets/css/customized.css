@@ -1,0 +1,110 @@
+/* GENERAL */
+.white {
+  background-color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+body, html{
+  background-color: white !important;
+}
+
+.dark {
+  background-color: #808080;
+  color: white !important;
+}
+
+/* NEWSLETTER SIGNUP */
+.callToAction  a, .tryButton, .productButton {
+  background: #91c11e;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.callToAction  a:hover,  .tryButton:hover, .productButton:hover {
+  background: #79a119;
+  border: none;
+  color: white;
+}
+
+h2, h3 {
+  word-wrap: break-word;
+}
+
+
+/* Sections */
+
+.emotional .text {
+  color: black !important;
+}
+
+.actionShot {
+  height: 38%;;
+  width: 100%;
+  background-image: url(/assets/actionShot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% 8%;
+}
+
+.features {
+  background: white;
+  text-align: center;
+}
+
+.features .text {
+  color: black !important;
+}
+
+.showroom .text {
+  color: black !important;
+}
+
+div.emotional {
+  color: black;
+  background: white;
+}
+
+
+.mobile-center {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.mobile-center img {
+  max-width: 40% !important;
+  margin-right: 50%;
+  transform: translateX(50%);
+}
+
+/* IMPRESSUM */
+.footer {
+  background-color: white;
+  text-align: center;
+  padding: 1em;
+}
+.footer > span {
+  color: black;
+  font-size: 0.8em;
+}
+
+@media (min-width:801px)  { 
+  img.stars {
+    max-width: 30% !important;
+  }
+
+  .mobile-center {
+    text-align: left;
+    padding: 0;
+  }
+
+  .mobile-center img {
+    max-width: 200px;
+    margin-right: 0;
+    transform: translateX(0);
+  }
+}
