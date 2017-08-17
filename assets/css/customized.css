@@ -25,6 +25,22 @@ body, html{
   color: white;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+  .row-sm-no-padding {
+    [class*="col-"] {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  .container-no-padding {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+  }
+}
+
 .callToAction  a:hover,  .tryButton:hover, .productButton:hover {
   background: #79a119;
   border: none;
