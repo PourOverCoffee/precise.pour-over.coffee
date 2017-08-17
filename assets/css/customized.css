@@ -31,6 +31,13 @@ body, html{
   color: white;
 }
 
+.cta {
+  background: #ff6565;
+}
+.cta:hover {
+  background: #ff4d4d;
+}
+
 h2, h3 {
   word-wrap: break-word;
 }
@@ -51,6 +58,15 @@ h2, h3 {
   background-position: 66% 8%;
 }
 
+.pitchShot {
+  height: 70%;
+  width: 100%;
+  background-image: url(/assets/pitchImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 15% 10%;
+}
+
 .features {
   background: white;
   text-align: center;
@@ -69,6 +85,9 @@ div.emotional {
   background: white;
 }
 
+.testimonialImage {
+  border-radius: none !important;
+}
 
 .mobile-center {
   text-align: center;
@@ -76,7 +95,7 @@ div.emotional {
 }
 
 .mobile-center img {
-  max-width: 40% !important;
+  max-width: 70% !important;
   margin-right: 50%;
   transform: translateX(50%);
 }
@@ -97,6 +116,10 @@ div.emotional {
     max-width: 30% !important;
   }
 
+  .slider-stage {
+    text-align: center;
+  }
+
   .mobile-center {
     text-align: left;
     padding: 0;
@@ -106,5 +129,12 @@ div.emotional {
     max-width: 200px;
     margin-right: 0;
     transform: translateX(0);
+  }
+
+  .text-main-stage {
+    text-align: left;
+  }
+  .pitchShot {
+    height: 60%;
   }
 }
