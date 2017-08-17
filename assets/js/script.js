@@ -68,9 +68,6 @@ function addScollListenerToId(id) {
       handler: function() {
         console.log("Reached WayPoint " + id)
         ga('send', 'event', 'scroll', id);
-          },
-          offset: 'bottom-in-view'
-        })
         logAction("scrollPoint-" + window.location.search.replace('?', ''), id)
         fbq('track', 'scroll', {
     		  element: id
@@ -78,6 +75,9 @@ function addScollListenerToId(id) {
     		fbq('track', 'scroll-'+id, {
     		  element: id
     		}); 
+          },
+          offset: 'bottom-in-view'
+        })
     // console.log("Added WayPoint for " + id)
   }
 
@@ -88,19 +88,17 @@ function addScollListenerToId(id) {
 // ============================================================================
 // Try Buttons
 $('.tryButton').each(function() { 
-  var from = '&from='+this.id
   if(window.location.search.indexOf('product=') == -1){
-    $(this).attr('href', 'thanks.html?product=05_'+ window.location.host.split('.')[0] + '&'+window.location.search.replace('?', '')+from) 
+    $(this).attr('href', 'thanks.html?product=05_'+ window.location.host.split('.')[0] + '&'+window.location.search.replace('?', '')) 
   }else{
-    $(this).attr('href', 'thanks.html'+window.location.search+from) 
+    $(this).attr('href', 'thanks.html'+window.location.search) 
   }
 })
 $('.productButton').each(function() { 
-  var from = '&from='+this.id
   if(window.location.search.indexOf('product=') == -1){
-    $(this).attr('href', 'product.html?product=05_'+ window.location.host.split('.')[0] + '&'+window.location.search.replace('?', '')+from) 
+    $(this).attr('href', 'product.html?product=05_'+ window.location.host.split('.')[0] + '&'+window.location.search.replace('?', '')) 
   }else{
-    $(this).attr('href', 'product.html'+window.location.search+from) 
+    $(this).attr('href', 'product.html'+window.location.search) 
   }
 })
 
