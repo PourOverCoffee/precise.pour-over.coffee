@@ -42,7 +42,7 @@ var start_time = new Date()
 
 
 function logSession() {
-    // Log Session (POST http://localhost:3000/log/session)
+    // Log Session (GET http://localhost:3000/log/session)
 
     session = JSON.stringify({
             "campaign": campaign,
@@ -57,12 +57,8 @@ function logSession() {
 
     jQuery.ajax({
         url: server + "/log/session",
-        type: "POST",
-        headers: {
-            "Content-Type": "application/json; charset=utf-8",
-        },
-        contentType: "application/json",
-        data: session
+        type: "GET",
+        data: {data: session}
     })
     .done(function(data, textStatus, jqXHR) {
         // console.log("HTTP Request Succeeded: " + jqXHR.status);
@@ -75,7 +71,7 @@ function logSession() {
 }
 
 function logAction(action, identifier) {
-    // Log Action (POST http://localhost:3000/log/action)
+    // Log Action (GET http://localhost:3000/log/action)
     action = JSON.stringify({
             "action": action || 'default',
             "session_token": session_token,
@@ -86,12 +82,8 @@ function logAction(action, identifier) {
 
     jQuery.ajax({
         url: server + "/log/action",
-        type: "POST",
-        headers: {
-            "Content-Type": "application/json; charset=utf-8",
-        },
-        contentType: "application/json",
-        data: action
+        type: "GET",
+        data: {data: action}
     })
     .done(function(data, textStatus, jqXHR) {
         // console.log("HTTP Request Succeeded: " + jqXHR.status);
