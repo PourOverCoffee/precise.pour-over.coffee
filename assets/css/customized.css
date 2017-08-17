@@ -69,9 +69,9 @@ h2, h3 {
   height: 38%;;
   width: 100%;
   background-image: url(/assets/actionShot.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 66% 8%;
+  background-position: center !important;
 }
 
 .pitchShot {
