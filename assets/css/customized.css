@@ -42,7 +42,7 @@ body, html{
 }
 
 .callToAction  a:hover,  .tryButton:hover, .productButton:hover {
-  background: #79a119;
+  background: #ff2424;
   border: none;
   color: white;
 }
@@ -51,7 +51,7 @@ body, html{
   background: #ff6565;
 }
 .cta:hover {
-  background: #ff4d4d;
+  background: #ff2424;
 }
 
 h2, h3 {
