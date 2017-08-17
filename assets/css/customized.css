@@ -25,6 +25,12 @@ body, html{
   color: white;
 }
 
+.backgroundclip {
+    border-radius: 15px;
+    background-clip: padding-box;
+    border: 8px solid transparent;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
   .row-sm-no-padding {
